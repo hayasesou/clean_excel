@@ -3,12 +3,7 @@
 ## 概要
 ここにプロジェクトの概要を記述してください。プロジェクトの目的や主な機能、利用技術などを簡潔に紹介します。
 
-## データセットの準備
-このプロジェクトで使用するデータセットはGoogle Driveに保存されています。以下の手順に従ってアクセスし、必要なデータをダウンロードしてください。
 
-1. Google Driveの[共有リンク](https://docs.google.com/spreadsheets/d/1qYi2QqqIt4TG9KMEnDJVIep0rgVt1QS6/edit?usp=sharing&ouid=106553213312574087716&rtpof=true&sd=true)にアクセスします。
-2. 必要なファイルを選択し、ローカル環境にダウンロードします。
-3. `python-template/dataset`に格納します。
 
 ## 環境構築
 このプロジェクトは `pyenv` と `pip` を使用してPython環境を構築します。以下の手順に従って環境をセットアップしてください。
@@ -19,10 +14,10 @@ pyenv install 3.11.0
 pyenv global 3.11.0
 
 # 仮想環境の作成
-python -m venv myenv
+python -m venv venv
 
 # 仮想環境の有効化
-source myenv/bin/activate
+source venv/bin/activate
 
 # 必要なパッケージのインストール
 pip install -r requirements.txt
